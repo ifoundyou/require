@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <title>而-王宏鑫-北京联动在线-@我为你传媒 微杂志</title>
+  <meta name="keywords" content="我为你传媒,微杂志,手机阅读,二维码扫描" />
+  <meta name="description" content="而-我为你传媒微杂志，王宏鑫-北京联动在线。手机扫描二维码轻松阅读。" />
+  <meta charset="utf-8" />
+  <meta name="apple-touch-fullscreen" content="YES" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="pragram" content="no-cache" />
+  <link rel="stylesheet" type="text/css" href="src/stylesheets/main.css" />
+  <script type="text/javascript">
+    var phoneWidth = parseInt(window.screen.width);
+    var phoneScale = phoneWidth / 640;
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)) {
+        var version = parseFloat(RegExp.$1);
+        if (version > 2.3) {
+            document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+        } else {
+            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+  </script>
+  <script type="text/javascript" src="src/vendor/require.js" data-main="src/bin/main" defer async="true"></script>
+</head>
+<body style="overflow-x:hidden;overflow-y:hidden;">
+</body>
+</html>
